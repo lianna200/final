@@ -5,6 +5,8 @@ $todo_list = filter_input(INPUT_POST, 'todolist', FILTER_DEFAULT,
 if ($todo_list === NULL) {
     $todo_list = array();
      $todo_list[] = 'Get grosseries';
+     $todo_list[] = 'Clean house';
+     $todo_list[] = 'other';
 }
 //get action variable from POST
 $action = filter_input(INPUT_POST, 'action');
